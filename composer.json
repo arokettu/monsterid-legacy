@@ -4,6 +4,7 @@
     "keywords": ["avatar", "monsterid"],
     "homepage": "https://sandfox.dev/php/monsterid.html",
     "license": "MIT",
+    "type": "metapackage",
     "authors": [
         {
             "name": "Andreas Gohr",
@@ -28,31 +29,8 @@
         },
         "sort-packages": true
     },
-    "autoload": {
-        "psr-4": {
-            "SandFox\\MonsterID\\": "src/classes"
-        },
-        "files": [
-            "src/bootstrap.php"
-        ]
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "SandFox\\MonsterID\\Tests\\": "tests"
-        }
-    },
     "require": {
-        "php": "^7.1 | ^8.0",
-        "ext-gd": "*",
-        "arokettu/is-resource": "^1.0",
-        "arokettu/random-polyfill": "^1.0.1",
-        "symfony/deprecation-contracts": "^2.1 | ^3.0"
-    },
-    "require-dev": {
-        "phpunit/phpunit": ">= 7.0 < 10",
-        "psy/psysh": "*",
-        "sandfox.dev/code-standard": "^10@dev",
-        "squizlabs/php_codesniffer": "*",
-        "vimeo/psalm": "^4.10"
+        "php": ">= 5.5 < 9",
+        "arokettu/monsterid": "^1.4"
     }
 }
