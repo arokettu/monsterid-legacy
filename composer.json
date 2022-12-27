@@ -4,7 +4,7 @@
     "keywords": ["avatar", "monsterid"],
     "homepage": "https://sandfox.dev/php/monsterid.html",
     "license": "MIT",
-    "type": "metapackage",
+    "type": "library",
     "authors": [
         {
             "name": "Andreas Gohr",
@@ -29,8 +29,15 @@
         },
         "sort-packages": true
     },
+    "autoload": {
+        "files": [
+            "legacy-autoload.php",
+            "legacy-functions.php"
+        ]
+    },
     "require": {
-        "php": ">= 7.1 < 9",
-        "arokettu/monsterid": "^2.3"
+        "php": ">= 8.0",
+        "ext-gd": "*",
+        "arokettu/monsterid": "^3.0"
     }
 }
